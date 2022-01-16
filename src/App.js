@@ -1,4 +1,4 @@
-import {Route,Routes} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 //hoc
 import Defaulthoc from "./hoc/Default.hoc";
@@ -7,9 +7,10 @@ import Temp from "./components/temp";
   function App() {
     return (
       <>
-      <Routes>
-      <Defaulthoc path="/" exact element={<Temp/>}/>
-      </Routes>
+      <Route>
+
+      <Defaulthoc path="/" exact component={Temp}/>
+      </Route>
       </>
 
   );
