@@ -47,7 +47,10 @@ const Navbar = () => {
 
     </div>
 
-    <div className="hidden lg:flex">{/*large screen*/}</div>
+    <div className="hidden lg:flex">{/*large screen*/}
+
+
+    </div>
     </nav>
     </>
   );
