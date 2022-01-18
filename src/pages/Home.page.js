@@ -35,7 +35,7 @@ const HomePage =()=>{
     />
     </div>
   <div>
-    <Premiere />
+    <Premiere PremiereImages={popularMovies}/>
     </div>
     </div>
     </div>

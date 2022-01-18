@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import Poster from "../Poster/poster.component";
 
-const Premiere =() =>{
+const Premiere =(props) =>{
   const settings = {
     infinity: true,
     slidesToShow: 5,
@@ -52,7 +52,7 @@ const Premiere =() =>{
     <p className="text-white text-sm">Brand New releases every friday</p>
     </div>
     <Slider {...settings}>
-    {PremiereImages.map((image)=>(
+    {props.PremiereImages.map((image)=>(
       <Poster {...image} isDark/>
     ))}
     </Slider>
