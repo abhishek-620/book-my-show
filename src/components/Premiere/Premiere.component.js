@@ -17,42 +17,43 @@ const Premiere =() =>{
       scr:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg",
       alt:"Premiere Image",
       title:"Dune",
-      subtitle:"English",
-      isDark:false
+      subtitle:"English"
+
     },
     {
       scr:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg",
       alt:"Premiere Image",
       title:"Dune",
-      subtitle:"English",
-      isDark:false
+      subtitle:"English"
+
     },
     {
       scr:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg",
       alt:"Premiere Image",
       title:"Dune",
-      subtitle:"English",
-      isDark:false
+      subtitle:"English"
     },
     {
       scr:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg",
       alt:"Premiere Image",
       title:"Dune",
-      subtitle:"English",
-      isDark:false
+      subtitle:"English"
     },  {
         scr:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-xavthzuprr-portrait.jpg",
         alt:"Premiere Image",
         title:"Dune",
-        subtitle:"English",
-        isDark:false
+        subtitle:"English"
       }
   ];
   return (
     <>
+    <div className="flex flex-col items-start gap-1 py-4">
+    <h3 className="text-white text-xl font-bold">Premieres</h3>
+    <p className="text-white text-sm">Brand New releases every friday</p>
+    </div>
     <Slider {...settings}>
     {PremiereImages.map((image)=>(
-      <Poster {...image}/>
+      <Poster {...image} isDark/>
     ))}
     </Slider>
     </>
